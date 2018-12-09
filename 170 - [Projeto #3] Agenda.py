@@ -54,7 +54,7 @@ def apaga():
     global agenda, alterada
     nome = pede_nome()
     pes = pesquisa(pede_nome())
-    if p != None:
+    if pes != None:
         if confirma('Deleção') == 'S':
             del agenda[pes]
             alterada = True
