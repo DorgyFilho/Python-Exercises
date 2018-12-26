@@ -3,7 +3,7 @@
 # Otherwise, for every 5km above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points. For example, if the speed is 80, it should print: “Points: 2”.
 # If the driver gets more than 12 points, the function should print: “License suspended”
 
-def licDriver(recSpeed, speed, jump):
+def licDriver(speed):
     points = 0
     overspeed = ''
     excess = ''
@@ -20,9 +20,8 @@ def licDriver(recSpeed, speed, jump):
             print('Your License Driver is Suspended')
     return ''
 
-recSpeed=70
+
 speed = int(input('Your Speed: '))
-jump = 5
-licDriver(recSpeed, speed, jump)
+licDriver(speed)
 
 
